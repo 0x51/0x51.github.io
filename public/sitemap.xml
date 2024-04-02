@@ -2,17 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/docs/</loc>
-    <lastmod>2024-04-02T10:59:46+07:00</lastmod>
+    <loc>//localhost:1313/categories/</loc>
+    <lastmod>2024-04-02T23:00:50+07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/funny/</loc>
+    <lastmod>2024-04-02T23:00:50+07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/hello-word/</loc>
+    <lastmod>2024-04-02T23:00:50+07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/human/</loc>
+    <lastmod>2024-04-02T23:00:50+07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2024-04-02T10:59:46+07:00</lastmod>
+    <lastmod>2024-04-02T23:00:50+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/docs/test/</loc>
-    <lastmod>2024-04-02T10:59:46+07:00</lastmod>
+    <loc>//localhost:1313/post/</loc>
+    <lastmod>2024-04-02T23:00:50+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>//localhost:1313/categories/quote/</loc>
+    <lastmod>2024-04-02T23:00:50+07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
+    <lastmod>2024-04-02T23:00:50+07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/test/</loc>
+    <lastmod>2024-04-02T10:59:46+07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/archives/</loc>
   </url>
 </urlset>

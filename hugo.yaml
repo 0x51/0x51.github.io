@@ -1,0 +1,32 @@
+baseURL: ''
+languageCode: en-us
+title: 'My 0x51 blog'
+theme: papermod
+
+params:
+  homeInfoParams:
+    Title: "Hi, I'm Quang."
+    Content: "This is the place where I share my personal perspectives. I write about tech, security, cloud computing, Kubernetes, and sometimes ... maybe ... finance. Btw, 0x51 stands for Q :v"
+  socialIcons:
+    - name: facebook
+      url: https://fb.com/der.specder
+    - name: x
+      url: https://x.com/der_specder
+    - name: github
+      url: https://github.com/hvauto
+  ShowReadingTime: True
+  ShowPostNavLinks: True  
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 30
