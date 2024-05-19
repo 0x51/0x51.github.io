@@ -2,24 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on My 0x51 blog</title>
-    <link>//localhost:1313/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on My 0x51 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 02 Apr 2024 23:00:50 +0700</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Funny</title>
-      <link>//localhost:1313/tags/funny/</link>
+      <link>/tags/funny/</link>
       <pubDate>Tue, 02 Apr 2024 23:00:50 +0700</pubDate>
-      <guid>//localhost:1313/tags/funny/</guid>
+      <guid>/tags/funny/</guid>
       <description></description>
     </item>
     <item>
       <title>Human</title>
-      <link>//localhost:1313/tags/human/</link>
+      <link>/tags/human/</link>
       <pubDate>Tue, 02 Apr 2024 23:00:50 +0700</pubDate>
-      <guid>//localhost:1313/tags/human/</guid>
+      <guid>/tags/human/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Issuers</title>
+      <link>/tags/issuers/</link>
+      <pubDate>Thu, 02 Mar 2023 10:59:46 +0700</pubDate>
+      <guid>/tags/issuers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Poker</title>
+      <link>/tags/poker/</link>
+      <pubDate>Thu, 02 Mar 2023 10:59:46 +0700</pubDate>
+      <guid>/tags/poker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tail Risk</title>
+      <link>/tags/tail-risk/</link>
+      <pubDate>Thu, 02 Mar 2023 10:59:46 +0700</pubDate>
+      <guid>/tags/tail-risk/</guid>
       <description></description>
     </item>
   </channel>

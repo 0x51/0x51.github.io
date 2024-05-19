@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>My 0x51 blog</title>
-    <link>//localhost:1313/</link>
+    <link>/</link>
     <description>Recent content on My 0x51 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 02 Apr 2024 23:00:50 +0700</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fomo sapiens Word</title>
-      <link>//localhost:1313/post/quote/</link>
+      <link>/post/quote/</link>
       <pubDate>Tue, 02 Apr 2024 23:00:50 +0700</pubDate>
-      <guid>//localhost:1313/post/quote/</guid>
+      <guid>/post/quote/</guid>
       <description>To day Favorite QUOTE: ~~~ Yuval Noah Harari: &amp;ldquo;For millions of years, Homo sapiens lived as just another insignificant animal minding its own business in a corner of Africa. In the last few thousand years, it transformed itself into the master of the entire planet - not because of its physical abilities but because of its unique language.&amp;rdquo;</description>
     </item>
     <item>
       <title>Điện VN Analysis q(≧▽≦q)φ(*￣0￣)</title>
-      <link>//localhost:1313/post/evn-dillemma/</link>
+      <link>/post/evn-dillemma/</link>
       <pubDate>Thu, 02 Mar 2023 10:59:46 +0700</pubDate>
-      <guid>//localhost:1313/post/evn-dillemma/</guid>
+      <guid>/post/evn-dillemma/</guid>
       <description>Cảnh báo - nontech =)))) Dạo này mình có nổi hứng đọc báo, vớ được vài bài báo về điện gió điện mặt trời :
 https://vnexpress.net/nhieu-chu-dau-tu-dien-tai-tao-chay&amp;hellip; https://vnexpress.net/nha-dau-tu-dien-gio-mat-troi-chuyen&amp;hellip; Hôm nay skip 1 buổi Poker với hội bạn :v , tiện cũng đang có hứng phân tích tí tẹo để đỡ quên mấy cái kiến thức cơ bản, thì mạn phép được bàn về cái khái niệm mà chắc là ai hay bất kỳ doanh nghiệp nào cũng phải đụng đến khi chơi mấy cái Game tài chính này, đấy chính là rủi ro khi đầu tư [Tail Risk].</description>
     </item>

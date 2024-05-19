@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Human on My 0x51 blog</title>
-    <link>//localhost:1313/tags/human/</link>
+    <link>/tags/human/</link>
     <description>Recent content in Human on My 0x51 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 02 Apr 2024 23:00:50 +0700</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/human/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/human/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fomo sapiens Word</title>
-      <link>//localhost:1313/post/quote/</link>
+      <link>/post/quote/</link>
       <pubDate>Tue, 02 Apr 2024 23:00:50 +0700</pubDate>
-      <guid>//localhost:1313/post/quote/</guid>
+      <guid>/post/quote/</guid>
       <description>To day Favorite QUOTE: ~~~ Yuval Noah Harari: &amp;ldquo;For millions of years, Homo sapiens lived as just another insignificant animal minding its own business in a corner of Africa. In the last few thousand years, it transformed itself into the master of the entire planet - not because of its physical abilities but because of its unique language.&amp;rdquo;</description>
     </item>
   </channel>

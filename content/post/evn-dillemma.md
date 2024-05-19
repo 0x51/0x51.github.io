@@ -1,5 +1,5 @@
 ---
-title: 'Điện VN Analysis q(≧▽≦q)φ(*￣0￣)'
+title: 'Điện VN Analysis'
 date: 2023-03-02T10:59:46+07:00
 draft: false
 tags: ["issuers", "tail risk", "poker"]

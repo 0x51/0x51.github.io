@@ -2,33 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2024-04-02T23:00:50+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/funny/</loc>
+    <loc>/post/quote/</loc>
     <lastmod>2024-04-02T23:00:50+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/hello-word/</loc>
+    <loc>/tags/funny/</loc>
     <lastmod>2024-04-02T23:00:50+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/human/</loc>
+    <loc>/tags/human/</loc>
     <lastmod>2024-04-02T23:00:50+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>/</loc>
     <lastmod>2024-04-02T23:00:50+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2024-04-02T23:00:50+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/quote/</loc>
+    <loc>/categories/quote/</loc>
     <lastmod>2024-04-02T23:00:50+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2024-04-02T23:00:50+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/test/</loc>
-    <lastmod>2024-04-02T10:59:46+07:00</lastmod>
+    <loc>/post/evn-dillemma/</loc>
+    <lastmod>2023-03-02T10:59:46+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/archives/</loc>
+    <loc>/categories/finance/</loc>
+    <lastmod>2023-03-02T10:59:46+07:00</lastmod>
+  </url><url>
+    <loc>/tags/issuers/</loc>
+    <lastmod>2023-03-02T10:59:46+07:00</lastmod>
+  </url><url>
+    <loc>/tags/poker/</loc>
+    <lastmod>2023-03-02T10:59:46+07:00</lastmod>
+  </url><url>
+    <loc>/tags/tail-risk/</loc>
+    <lastmod>2023-03-02T10:59:46+07:00</lastmod>
+  </url><url>
+    <loc>/archives/</loc>
   </url>
 </urlset>
