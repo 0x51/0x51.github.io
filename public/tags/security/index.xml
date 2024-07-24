@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Security on My 0x51 blog</title>
+    <link>//localhost:1313/tags/security/</link>
+    <description>Recent content in Security on My 0x51 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 May 2024 22:53:05 +0700</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>K8s Security - Bảo mật Microservice trên K8s !!??</title>
+      <link>//localhost:1313/post/k8s-security/</link>
+      <pubDate>Sun, 19 May 2024 22:53:05 +0700</pubDate>
+      <guid>//localhost:1313/post/k8s-security/</guid>
+      <description>Một cái tiêu đề rõ ràng quá đúng không :D Nhưng mà mình không nghĩ ra được cái tiêu đề nào nó vui hơn hay ít ra là ít học thuật hơn cái này nên là &amp;hellip; thôi, just go 4 it vậy :3 Tại sao lại là k8s và tại sao lại là Microservice, mình nghĩ đây đáng lý phải là một chủ đề đáng để bàn luận chứ nhỉ.</description>
+    </item>
+  </channel>
+</rss>

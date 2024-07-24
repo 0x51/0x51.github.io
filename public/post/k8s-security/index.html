@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>K8s Security - Bảo mật Microservice trên K8s !!?? | My 0x51 blog</title>
+<meta name="keywords" content="k8s, security, DevSecOps">
+<meta name="description" content="Một cái tiêu đề rõ ràng quá đúng không :D Nhưng mà mình không nghĩ ra được cái tiêu đề nào nó vui hơn hay ít ra là ít học thuật hơn cái này nên là &hellip; thôi, just go 4 it vậy :3 Tại sao lại là k8s và tại sao lại là Microservice, mình nghĩ đây đáng lý phải là một chủ đề đáng để bàn luận chứ nhỉ.">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/post/k8s-security/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/post/k8s-security/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="My 0x51 blog (Alt + H)">My 0x51 blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      K8s Security - Bảo mật Microservice trên K8s !!??
+    </h1>
+    <div class="post-meta"><span title='2024-05-19 22:53:05 +0700 +07'>May 19, 2024</span>&nbsp;·&nbsp;5 min
+
+</div>
+  </header> 
+  <div class="post-content"><h4 id="một-cái-tiêu-đề-rõ-ràng-quá-đúng-không-d-nhưng-mà-mình-không-nghĩ-ra-được-cái-tiêu-đề-nào-nó-vui-hơn-hay-ít-ra-là-ít-học-thuật-hơn-cái-này-nên-là--thôi-just-go-4-it-vậy-3">Một cái tiêu đề rõ ràng quá đúng không :D Nhưng mà mình không nghĩ ra được cái tiêu đề nào nó vui hơn hay ít ra là ít học thuật hơn cái này nên là &hellip; thôi, just go 4 it vậy :3<a hidden class="anchor" aria-hidden="true" href="#một-cái-tiêu-đề-rõ-ràng-quá-đúng-không-d-nhưng-mà-mình-không-nghĩ-ra-được-cái-tiêu-đề-nào-nó-vui-hơn-hay-ít-ra-là-ít-học-thuật-hơn-cái-này-nên-là--thôi-just-go-4-it-vậy-3">#</a></h4>
+<p><img loading="lazy" src="/k8s-sec-img/meme.jpg" alt="meme: meme"  />
+</p>
+<p>Tại sao lại là k8s và tại sao lại là Microservice, mình nghĩ đây đáng lý phải là một chủ đề đáng để bàn luận chứ nhỉ. Người ta thường nói k8s là một nền tảng để quản lý container tập chung, và cũng không khó để tìm quanh Internet và đến 90% người ta đều nói vậy, với mình như vậy cũng đúng, nhưng &hellip; chưa đủ lắm :D Để mà nói về sự thông minh và cái triết lý, core concept đỉnh chóp của k8s mình nghĩ nên đặt nó dưới góc nhìn của . . . một nền tảng quản lý APIs.</p>
+<p>Sorry khi bưng ra một cái góc nhìn ảo ma như vậy =))) nhưng mà tin mình đi, kubernetes thể hiện cả đống nguyên tắc của một APIs hoàn hảo. Hồi lâu rồi mình có kêu với 1 ô a ở cty là &ldquo;e nghĩ e code lại nguyên được cái kubectl bằng curl với bash được đấy&rdquo;, ổng không tin,&hellip; vài câu chuyện về việc &quot; thế thì chú đi làm cho GG mẹ đi&quot; &hellip; và vài câu bàn tán trao đổi qua lại hay ho nữa :D nhưng mình cười :3 Và &hellip;cái trò con bò đấy đơn giản thật, thật đấy .</p>
+<p>Cái chủ đề về Microservice đã đủ để đưa ra bàn tán đấm đá cả năm r, thêm vào cả cái nền tảng nhiều tính năng như k8s nữa =))) oh men, câu chuyện nghe có vẻ sẽ đi xa.. xa&hellip;. và, xa lắm.
+Nào là Single Responsibility Principle, Decentralized Data Management, API-Driven, Stateless,Loose Cupling, Auto scaling, haha cái vũ trụ Micro thôi mà nghe vẻ nhiều vấn đề phết.</p>
+<p>Nhìn lại k8s mà xem, mỗi một cái resource ở trên nó đều có group, vesion, kind, thậm chí còn thêm vào được cả external metadata :v. Hồi đầu sử dụng helm mình còn thắc mắc &ldquo;Ơ đù mé, database của thằng helm đâu nhỉ, server của nó nằm chỗ mô, sao vẫn quản lý version ầm ầm ta :D sau này mới rõ, tất cả chỉ là metadata nhét thêm vào&rdquo;. Ơ thế bạn muốn cái API lý tưởng của bạn cần có thêm cái gì nữa. Thậm chí nó còn có CRDs để mở rộng thêm cho k8s nữa cơ mà :3.</p>
+<p>Cái phần này sẽ có vẻ có giá trị hơn phần mình sẽ viết ở bên dưới đây, thật đấy, mấy cái về security bên dưới mang nặng tính lý thuyết chỉ là mình túm túm lại thôi. Còn nói thật =))) bạn muốn Microservice của bạn bảo mật :v làm hệt như những gì K8S làm với APIServer, Controller Manager, Scheduler của kubernetes ấy :3 Hehe -  Bắt đầu nhé!</p>
+<h4 id="k8s-sec">K8S Sec<a hidden class="anchor" aria-hidden="true" href="#k8s-sec">#</a></h4>
+<p>Để có cái nhìn tổng thể hơn về những vấn đề an toàn bảo mật của k8s ta không thể không nhắc đến mô hình Security 4C của các hệ thống Cloud Native. Mô hình 4C này chia hệ thống thành 4 lớp khác nhau đó chính là : Cloud, Clusters, Containers, và Code. Cách tiếp cận này sẽ giúp ta tăng cường bảo vệ theo chiều sâu (Defend in Depth) và cũng được nhiều người coi là phương thức chuẩn nhất, hiệu quả nhất để có thể bảo mật cho hệ thống phần mềm.</p>
+<p><img loading="lazy" src="/k8s-sec-img/4c-model.jpg" alt="4c: 4c"  />
+</p>
+<p>Mỗi lớp của mô hình này sẽ được xây dựng dựa trên lớp ngoài kế tiếp nó. Lớp Code được hưởng lợi từ việc bảo vệ tốt các lớp trước nó như Container, Cluster, Cloud. Nhưng Code layer cũng là lớp cuối cùng trong mô hình bảo mật Cloud Native. Nếu ta chỉ giải quyết các vấn đề bảo mật ở lớp Code, mà các lớp trên không đáp ứng được các tiêu chuẩn bảo mật thì cũng không đảm bảo độ an toàn của hệ thống. (Cloud trong mô hình này là nhắc đến các nhà cung cấp dịch vụ Cloud, nhưng cũng có thể hiểu ở đây là Datacenter, là các máy chủ chạy cụm K8S chúng ta). Ta sẽ đi vào phân tích từng phần cụ thể.</p>
+<p>Container là một công nghệ ảo hóa nhẹ, cho phép chạy các ứng dụng độc lập với nhau trên cùng một máy chủ. Container có thể được triển khai nhanh chóng, dễ dàng và linh hoạt, giúp tăng hiệu quả và tiết kiệm chi phí. Tuy nhiên, container cũng đặt ra những thách thức về bảo mật, đòi hỏi sự chú ý đến các lớp bảo mật khác nhau, từ ứng dụng, container engine, network, storage cho đến host OS.</p>
+<p>È &hellip; mà thôi lười viết ra đây quá.
+Chi tiết nếu bạn muốn đọc thì mình có cắt một đoạn ở luận văn của mình ra đêy nhé :3
+Yên tâm, legit và không có e bé :D
+<a href="/k8s-sec-file/k8s-sec.pdf">Download file</a></p>
+<p>À về cơ bản thì bạn cũng nên biết và hiểu về security context ở 3 cái role sẽ đi xuyên suốt quá trình làm việc cùng với k8s là Developers, Project Admins, và Administrators ở đây : [ https://github.com/kubernetes/design-proposals-archive/blob/main/auth/security.md ]
+Hay lắm, đọc đi!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="//localhost:1313/tags/k8s/">K8s</a></li>
+      <li><a href="//localhost:1313/tags/security/">Security</a></li>
+      <li><a href="//localhost:1313/tags/devsecops/">DevSecOps</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="//localhost:1313/post/quote/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Fomo sapiens Word</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="//localhost:1313/">My 0x51 blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
