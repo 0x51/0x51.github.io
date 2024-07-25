@@ -1,5 +1,5 @@
 ---
-title: 'K8s Security - Bảo mật Microservice trên K8s !!??'
+title: 'Just a thought about K8s Security - Bảo mật Microservice trên K8s !!??'
 date: 2024-05-19T22:53:05+07:00
 draft: false
 tags: ["k8s", "security", "DevSecOps"]
