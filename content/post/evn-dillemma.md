@@ -6,7 +6,7 @@ tags: ["issuers", "tail risk", "poker"]
 categories: ["finance"]
 ---
 
-####  Cảnh báo - nontech =)))) 
+####  Cảnh báo - nontech
 
 _________________________
 Dạo này mình có nổi hứng đọc báo, vớ được vài bài báo về điện gió điện mặt trời :
