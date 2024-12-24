@@ -6,8 +6,15 @@
     <description>Recent content on My 0x51 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 May 2024 22:53:05 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2024 00:03:04 +0700</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ignorant</title>
+      <link>//localhost:1313/post/ignorant/</link>
+      <pubDate>Wed, 25 Dec 2024 00:03:04 +0700</pubDate>
+      <guid>//localhost:1313/post/ignorant/</guid>
+      <description>Con người, suốt hàng nghìn năm tiến hóa, vẫn luôn mang trong mình một điểm yếu kỳ lạ: nỗi khao khát tin vào điều dễ chịu hơn là sự thật. Ta có thể chinh phục vũ trụ, tách nguyên tử, giải mã bộ gen, nhưng khi đối diện với sự bất toàn của chính mình, liệu chúng ta có thật sự trưởng thành hơn tổ tiên cách đây vài thế kỷ?</description>
+    </item>
     <item>
       <title>K8s Security - Bảo mật Microservice trên K8s !!??</title>
       <link>//localhost:1313/post/k8s-security/</link>
