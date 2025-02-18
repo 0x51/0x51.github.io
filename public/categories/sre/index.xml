@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SRE on My 0x51 blog</title>
+    <link>//localhost:1313/categories/sre/</link>
+    <description>Recent content in SRE on My 0x51 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Feb 2025 23:41:42 +0700</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/sre/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tracing dịch vụ bị chậm trên môi trường Kubernetes Production</title>
+      <link>//localhost:1313/post/sre-tracing-slow-service/</link>
+      <pubDate>Tue, 18 Feb 2025 23:41:42 +0700</pubDate>
+      <guid>//localhost:1313/post/sre-tracing-slow-service/</guid>
+      <description>Nhét lại bộ bài trong hộc tủ vào túi đeo chéo (hồi còn ở cty tôi hay lòe mấy đứa bằng mấy cái tricks bài lỏ lỏd ), gấp lại quyển sổ tay đã 5 năm nằm trên cái bộ máy tính từ hồi tôi vào công ty. Mấy câu chào tạm biệt với anh em, cái bắt tay vội vã với sếp ngoài hành lang vắng người, ánh mắt hơi đỏ, nhưng cũng đến lúc phải rời khỏi cái “safe zone” ấy rồi.</description>
+    </item>
+  </channel>
+</rss>

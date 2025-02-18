@@ -6,17 +6,24 @@
     <description>Recent content in Posts on My 0x51 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Dec 2024 00:03:04 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 18 Feb 2025 23:41:42 +0700</lastBuildDate>
     <atom:link href="//localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tracing dịch vụ bị chậm trên môi trường Kubernetes Production</title>
+      <link>//localhost:1313/post/sre-tracing-slow-service/</link>
+      <pubDate>Tue, 18 Feb 2025 23:41:42 +0700</pubDate>
+      <guid>//localhost:1313/post/sre-tracing-slow-service/</guid>
+      <description>Nhét lại bộ bài trong hộc tủ vào túi đeo chéo (hồi còn ở cty tôi hay lòe mấy đứa bằng mấy cái tricks bài lỏ lỏd ), gấp lại quyển sổ tay đã 5 năm nằm trên cái bộ máy tính từ hồi tôi vào công ty. Mấy câu chào tạm biệt với anh em, cái bắt tay vội vã với sếp ngoài hành lang vắng người, ánh mắt hơi đỏ, nhưng cũng đến lúc phải rời khỏi cái “safe zone” ấy rồi.</description>
+    </item>
     <item>
       <title>Ignorant</title>
       <link>//localhost:1313/post/ignorant/</link>
       <pubDate>Wed, 25 Dec 2024 00:03:04 +0700</pubDate>
       <guid>//localhost:1313/post/ignorant/</guid>
-      <description>Ignorant Con người, suốt hàng nghìn năm tiến hóa, vẫn luôn mang trong mình một điểm yếu kỳ lạ: nỗi khao khát tin vào điều dễ chịu hơn là sự thật. Ta có thể chinh phục vũ trụ, tách nguyên tử, giải mã bộ gen, nhưng khi đối diện với sự bất toàn của chính mình, liệu chúng ta có thật sự trưởng thành hơn tổ tiên cách đây vài thế kỷ?</description>
+      <description>Con người, suốt hàng nghìn năm tiến hóa, vẫn luôn mang trong mình một điểm yếu kỳ lạ: nỗi khao khát tin vào điều dễ chịu hơn là sự thật. Ta có thể chinh phục vũ trụ, tách nguyên tử, giải mã bộ gen, nhưng khi đối diện với sự bất toàn của chính mình, liệu chúng ta có thật sự trưởng thành hơn tổ tiên cách đây vài thế kỷ?</description>
     </item>
     <item>
-      <title>K8s Security - Bảo mật Microservice trên K8s !!??</title>
+      <title>Just a thought about K8s Security - Bảo mật Microservice trên K8s !!??</title>
       <link>//localhost:1313/post/k8s-security/</link>
       <pubDate>Sun, 19 May 2024 22:53:05 +0700</pubDate>
       <guid>//localhost:1313/post/k8s-security/</guid>
@@ -34,7 +41,7 @@
       <link>//localhost:1313/post/evn-dillemma/</link>
       <pubDate>Thu, 02 Mar 2023 10:59:46 +0700</pubDate>
       <guid>//localhost:1313/post/evn-dillemma/</guid>
-      <description>Cảnh báo - nontech =)))) Dạo này mình có nổi hứng đọc báo, vớ được vài bài báo về điện gió điện mặt trời :
+      <description>Cảnh báo - nontech Dạo này mình có nổi hứng đọc báo, vớ được vài bài báo về điện gió điện mặt trời :
 https://vnexpress.net/nhieu-chu-dau-tu-dien-tai-tao-chay&amp;hellip; https://vnexpress.net/nha-dau-tu-dien-gio-mat-troi-chuyen&amp;hellip; Hôm nay skip 1 buổi Poker với hội bạn :v , tiện cũng đang có hứng phân tích tí tẹo để đỡ quên mấy cái kiến thức cơ bản, thì mạn phép được bàn về cái khái niệm mà chắc là ai hay bất kỳ doanh nghiệp nào cũng phải đụng đến khi chơi mấy cái Game tài chính này, đấy chính là rủi ro khi đầu tư [Tail Risk].</description>
     </item>
   </channel>

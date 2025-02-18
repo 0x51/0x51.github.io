@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/post/ignorant/</loc>
-    <lastmod>2024-12-25T00:03:04+07:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2024-12-25T00:03:04+07:00</lastmod>
+    <lastmod>2025-02-18T23:41:42+07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/</loc>
+    <lastmod>2025-02-18T23:41:42+07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/sre-tracing-slow-service/</loc>
+    <lastmod>2025-02-18T23:41:42+07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/ignorant/</loc>
     <lastmod>2024-12-25T00:03:04+07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
@@ -17,10 +20,10 @@
     <loc>//localhost:1313/tags/devsecops/</loc>
     <lastmod>2024-05-19T22:53:05+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/k8s/</loc>
+    <loc>//localhost:1313/post/k8s-security/</loc>
     <lastmod>2024-05-19T22:53:05+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/k8s-security/</loc>
+    <loc>//localhost:1313/tags/k8s/</loc>
     <lastmod>2024-05-19T22:53:05+07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/security/</loc>
